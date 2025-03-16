@@ -4,6 +4,8 @@ import { hamburger } from "../assets/icons";
 
 import { navLinks } from "../constants";
 
+import { Button } from "../components";
+
 const NavBar = () => {
     return (
         <header className="padding-x py-8 absolute z-10 w-full">
@@ -23,9 +25,13 @@ const NavBar = () => {
                         </li>
                     ))}
                 </ul>
-                <button className="font-montserrat leading-normal text-lg text-slate-950 max-lg:hidden">
-                    Explore Now
-                </button>
+                <Button
+                    label="Explore Now"
+                    iconURL=""
+                    backgroundColor="bg-white"
+                    borderColor="border-slate-gray"
+                    textColor="text-slate-gray"
+                />
                 <div>
                     <img
                         src={hamburger}
